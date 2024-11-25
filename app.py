@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://legal-advisor-psi.vercel.app"}})
+CORS(app)
 
 
 class LegalCaseAnalyzer:
